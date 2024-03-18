@@ -9,15 +9,14 @@ import org.apache.poi.xwpf.usermodel.*;
 public class Main {
 
     public static void main(String[] args) {
-        // List of students
+        //TODO: Read from CSV from power school
         String[] students = {"John Doe", "Jane Smith", "Alice Johnson"};
 
-        // Path to the template Word document
+        //TODO: add dynamic assignment name
         String templatePath = "template.docx";
-
-        // Path for the output document
         String outputPath = "output.docx";
 
+        //  Search doc for custom string and replace with name
         try {
             // Load the template Word document
             InputStream inputStream = new FileInputStream(templatePath);
@@ -32,8 +31,8 @@ public class Main {
                 outputStream.close();
             }
 
-            // Print the document
-            System.out.println("Document printed successfully!");
+            //TODO add a call to windows API to print
+            //TODO setup as web app?
 
         } catch (Exception e) {
             e.printStackTrace();
