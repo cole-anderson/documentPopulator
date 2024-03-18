@@ -31,7 +31,11 @@ public class Main {
                 outputStream.close();
             }
 
-            //TODO add a call to windows API to print
+            //TODO add a call to windows API to print all the docs then delete them
+            //TODO integrate with Google docs api call?
+            //TODO figure out how to make work with pdfs
+            //TODO figure out how to work on mac or on locked down machine
+            //TODO
             //TODO setup as web app?
 
         } catch (Exception e) {
